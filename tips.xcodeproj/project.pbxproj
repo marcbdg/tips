@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49135A0D19A1DEC300E4AF57 /* GravitasOne.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49135A0C19A1DEC300E4AF57 /* GravitasOne.ttf */; };
 		499BD645199FFEB80076FF1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499BD644199FFEB80076FF1C /* AppDelegate.swift */; };
 		499BD647199FFEB80076FF1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499BD646199FFEB80076FF1C /* ViewController.swift */; };
 		499BD64A199FFEB90076FF1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 499BD648199FFEB90076FF1C /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		49135A0C19A1DEC300E4AF57 /* GravitasOne.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GravitasOne.ttf; sourceTree = "<group>"; };
 		499BD63F199FFEB80076FF1C /* tips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		499BD643199FFEB80076FF1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		499BD644199FFEB80076FF1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +56,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49135A0719A1DD6600E4AF57 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				49135A0C19A1DEC300E4AF57 /* GravitasOne.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		499BD636199FFEB80076FF1C = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +85,7 @@
 		499BD641199FFEB80076FF1C /* tips */ = {
 			isa = PBXGroup;
 			children = (
+				49135A0719A1DD6600E4AF57 /* Resources */,
 				499BD644199FFEB80076FF1C /* AppDelegate.swift */,
 				499BD646199FFEB80076FF1C /* ViewController.swift */,
 				499BD648199FFEB90076FF1C /* Main.storyboard */,
@@ -190,6 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49135A0D19A1DEC300E4AF57 /* GravitasOne.ttf in Resources */,
 				499BD64A199FFEB90076FF1C /* Main.storyboard in Resources */,
 				499BD64C199FFEB90076FF1C /* Images.xcassets in Resources */,
 			);
