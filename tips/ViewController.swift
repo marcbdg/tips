@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet var totalLabel : UILabel
     @IBOutlet var tipControl : UISegmentedControl
     @IBOutlet var resultsPane : UIView
+    @IBOutlet var thanksMan : UIImageView
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,18 +47,18 @@ class ViewController: UIViewController {
         var total = billAmount + tip
         
         // Calculate and show the results field if the amount is >0
-        if billAmount > 0 {
+        if billAmount == nil || billAmount == 0 {
+            UIView.animateWithDuration(0.4, animations: {
+                self.resultsPane.alpha = 0
+                })
+            thanksMan.alpha = 0;
+        } else {
             tipLabel.text = String(format: "$%.2f", tip)
             totalLabel.text = String(format: "$%.2f", total)
             UIView.animateWithDuration(0.4, animations: {
                 self.resultsPane.alpha = 1
-            })
-
-        } else {
-            
-            UIView.animateWithDuration(0.4, animations: {
-                self.resultsPane.alpha = 0
-            })
+                })
+            thanksMan.alpha = 1;
         }
     }
 

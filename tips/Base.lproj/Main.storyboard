@@ -96,6 +96,10 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thanksMan" id="aYG-FR-dhE">
+                                <rect key="frame" x="40" y="388" width="240" height="165"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -106,6 +110,7 @@
                     <connections>
                         <outlet property="billField" destination="z7v-J2-MfF" id="Pyl-O0-KlW"/>
                         <outlet property="resultsPane" destination="Ek4-3X-SDd" id="7pQ-X0-s9S"/>
+                        <outlet property="thanksMan" destination="aYG-FR-dhE" id="b8x-lL-dA5"/>
                         <outlet property="tipControl" destination="MKI-HT-5ir" id="I4X-yS-sWu"/>
                         <outlet property="tipLabel" destination="2PB-V5-Yfa" id="Rk2-jj-800"/>
                         <outlet property="totalLabel" destination="oyb-4M-Fw0" id="OQr-Ru-6gd"/>
@@ -120,6 +125,9 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="thanksMan" width="167" height="186"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
