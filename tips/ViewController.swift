@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet var tipControl : UISegmentedControl
     @IBOutlet var resultsPane : UIView
     @IBOutlet var thanksMan : UIImageView
+    @IBOutlet var thanksLabel : UILabel
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +37,7 @@ class ViewController: UIViewController {
         
         // Dismiss the keyboard if the SegmentedControl was tapped
         if sender is UISegmentedControl {
-            view.endEditing(true)
+            hideKeyboard()
         }
         
         var tipPercentages = [0.18, 0.2, 0.22]
@@ -50,20 +51,33 @@ class ViewController: UIViewController {
         if billAmount == nil || billAmount == 0 {
             UIView.animateWithDuration(0.4, animations: {
                 self.resultsPane.alpha = 0
-                })
+            })
             thanksMan.alpha = 0;
         } else {
             tipLabel.text = String(format: "$%.2f", tip)
             totalLabel.text = String(format: "$%.2f", total)
             UIView.animateWithDuration(0.4, animations: {
                 self.resultsPane.alpha = 1
-                })
+            })
             thanksMan.alpha = 1;
         }
     }
 
     @IBAction func onTap(sender : AnyObject) {
+        hideKeyboard()
+    }
+    
+    func hideKeyboard() {
         view.endEditing(true)
+        
+        var billAmount = NSString(string: billField.text).doubleValue
+        if billAmount == nil || billAmount == 0 {
+            self.thanksLabel.alpha = 0
+        } else {
+            UIView.animateWithDuration(1, animations: {
+                self.thanksLabel.alpha = 1
+            })
+        }
     }
 }
 
